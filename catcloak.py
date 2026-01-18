@@ -88,7 +88,7 @@ class KeycloakAuthHandler(BaseAuthHandler):
         api_key: str,
         auth_resource: AuthResource,
         auth_permission: AuthPermission,
-        key_id: str,
+        agent_key: str,
     ) -> AuthUserInfo | None:
         log.warning("KeycloakAuthHandler does not support API keys.")
         return None
