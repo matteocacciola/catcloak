@@ -4,7 +4,7 @@
 
 [![awesome plugin](https://custom-icon-badges.demolab.com/static/v1?label=&message=awesome+plugin&color=383938&style=for-the-badge&logo=cheshire_cat_ai)](https://)
 
-Catcloak is a Cheshire Cat AI plugin that integrates Keycloak authentication into your Cheshire Cat instance, providing robust user management and access control.
+Catcloak is a Grinning Cat plugin that integrates Keycloak authentication into your CheshireCat instance, providing robust user management and access control.
 
 ## Features
 
@@ -74,4 +74,4 @@ curl --location --request PUT 'http://localhost:1865/auth_handler/settings/Keycl
 
 ## Usage
 
-Once configured, the Catcloak plugin will automatically handle authentication for your Cheshire Cat instance. Users will need to provide a valid Keycloak JWT token to access protected resources.
+Once configured, the Catcloak plugin will automatically handle authentication for your CheshireCat instance. Users will need to provide a valid Keycloak JWT token to access protected resources.
