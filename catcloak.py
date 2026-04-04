@@ -38,7 +38,7 @@ class KeycloakAuthHandler(BaseAuthHandler):
     def extract_user_id_websocket(self, request: HTTPConnection) -> str | None:
         pass
 
-    def authorize_user_from_jwt(
+    async def authorize_user_from_jwt(
         self,
         token: str,
         auth_resource: AuthResource,
@@ -81,7 +81,7 @@ class KeycloakAuthHandler(BaseAuthHandler):
             log.error(f"Error processing token: {e}")
             return None
 
-    def authorize_user_from_key(
+    async def authorize_user_from_key(
         self,
         request: HTTPConnection,
         protocol: Literal["http", "websocket"],
