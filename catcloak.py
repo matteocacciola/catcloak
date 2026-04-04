@@ -48,7 +48,7 @@ class KeycloakAuthHandler(BaseAuthHandler):
         try:
             # Returns cached user if token valid and authorized
             if token not in self.token_cache:
-                token_info = self.keycloak_openid.decode_token(token)
+                token_info = await self.keycloak_openid.a_decode_token(token)
 
                 expiration = token_info['exp']
                 self.token_cache[token] = (token_info, expiration)
